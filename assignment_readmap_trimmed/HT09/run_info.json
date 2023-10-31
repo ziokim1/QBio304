@@ -1,0 +1,13 @@
+{
+	"n_targets": 34658,
+	"n_bootstraps": 0,
+	"n_processed": 29929875,
+	"n_pseudoaligned": 22786523,
+	"n_unique": 21566947,
+	"p_pseudoaligned": 76.1,
+	"p_unique": 72.1,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Fri Oct 20 21:42:51 2023",
+	"call": "kallisto quant -i /home/ibg-4/assignment/assignment_data/Solanum_lycopersicum.SL3.0.cdna.all.index -o /home/ibg-4/assignment/assignment_readmap_trimmed/HT09 -t 4 --single -l 250 -s 30 /home/ibg-4/assignment/assignment_data_trimmed/SRR10998564_trimmed.fastq.gz"
+}
