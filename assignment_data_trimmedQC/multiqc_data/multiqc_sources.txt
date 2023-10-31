@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998560	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998560_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998567	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998567_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998568	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998568_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998570	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998570_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998559	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998559_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998563	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998563_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998565	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998565_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998562	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998562_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998569	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998569_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998561	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998561_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998566	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998566_trimmed_fastqc.zip
+FastQC	all_sections	home | ibg-4 | assignment | assignment_data_trimmed | SRR10998564	/home/ibg-4/assignment/assignment_data_trimmed/SRR10998564_trimmed_fastqc.zip

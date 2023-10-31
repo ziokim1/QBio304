@@ -1,0 +1,22 @@
+[2023-10-20 22:38:07,706] multiqc                                            [DEBUG  ]  This is MultiQC v1.16
+[2023-10-20 22:38:07,706] multiqc                                            [DEBUG  ]  Command used: /usr/local/bin/multiqc -d /home/ibg-4/assignment/assignment_data_trimmed
+[2023-10-20 22:38:07,998] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.16
+[2023-10-20 22:38:07,998] multiqc                                            [DEBUG  ]  Working dir : /home/ibg-4/assignment/assignment_data_trimmed
+[2023-10-20 22:38:07,998] multiqc                                            [DEBUG  ]  Template    : default
+[2023-10-20 22:38:07,998] multiqc                                            [DEBUG  ]  Running Python 3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]
+[2023-10-20 22:38:07,998] multiqc                                            [INFO   ]  Prepending directory to sample names
+[2023-10-20 22:38:07,999] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, mapdamage, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, bakta, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, freyja, humid, kat, leehom, librarian, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, sourmash, kaiju, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2023-10-20 22:38:07,999] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp874r4jok
+[2023-10-20 22:38:08,000] multiqc                                            [INFO   ]  Search path : /home/ibg-4/assignment/assignment_data_trimmed
+[2023-10-20 22:38:08,151] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_module_specific_max_filesize: 144] // [skipped_no_match: 24] // [skipped_ignore_pattern: 12]
+[2023-10-20 22:38:08,392] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.7.3
+[2023-10-20 22:38:08,392] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.7.3
+[2023-10-20 22:38:08,392] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2023-10-20 22:38:08,410] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 12 reports
+[2023-10-20 22:38:08,526] multiqc.utils.software_versions                    [DEBUG  ]  Reading software versions from config.software_versions
+[2023-10-20 22:38:08,537] multiqc                                            [DEBUG  ]  Compressing plot data
+[2023-10-20 22:38:08,670] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2023-10-20 22:38:08,670] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2023-10-20 22:38:08,670] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp874r4jok/multiqc_data' to '/home/ibg-4/assignment/assignment_data_trimmed/multiqc_data'
+[2023-10-20 22:38:08,672] multiqc                                            [DEBUG  ]  Full report path: /home/ibg-4/assignment/assignment_data_trimmed/multiqc_report.html
+[2023-10-20 22:38:08,735] multiqc                                            [INFO   ]  MultiQC complete

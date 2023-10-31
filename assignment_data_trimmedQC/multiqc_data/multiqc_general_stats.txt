@@ -1,0 +1,13 @@
+Sample	FastQC_mqc-generalstats-fastqc-median_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-total_sequences	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-avg_sequence_length
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998559	65	10.0	42.0	30832344.0	65.04751831544874	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998560	65	10.0	42.0	31030890.0	68.88352826219102	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998561	65	10.0	42.0	32372278.0	70.83913920643622	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998562	65	10.0	42.0	31254306.0	67.72213634844964	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998563	65	10.0	42.0	24170155.0	55.63874971490136	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998564	65	10.0	42.0	29929875.0	63.27402775456761	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998565	65	10.0	42.0	32029618.0	64.14811217531887	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998566	65	10.0	42.0	30846857.0	68.34659594299153	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998567	65	10.0	42.0	39988012.0	68.4677484653848	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998568	65	10.0	42.0	34202865.0	69.42570554301616	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998569	65	10.0	42.0	27461840.0	70.25471227839462	65.0
+home | ibg-4 | assignment | assignment_data_trimmed | SRR10998570	65	10.0	42.0	31872201.0	67.72271420581555	65.0

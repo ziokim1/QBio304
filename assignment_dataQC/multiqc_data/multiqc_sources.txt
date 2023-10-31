@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR10998563	/home/ibg-4/assignment/assignment_dataQC/SRR10998563_fastqc.zip
+FastQC	all_sections	SRR10998561	/home/ibg-4/assignment/assignment_dataQC/SRR10998561_fastqc.zip
+FastQC	all_sections	SRR10998559	/home/ibg-4/assignment/assignment_dataQC/SRR10998559_fastqc.zip
+FastQC	all_sections	SRR10998570	/home/ibg-4/assignment/assignment_dataQC/SRR10998570_fastqc.zip
+FastQC	all_sections	SRR10998565	/home/ibg-4/assignment/assignment_dataQC/SRR10998565_fastqc.zip
+FastQC	all_sections	SRR10998566	/home/ibg-4/assignment/assignment_dataQC/SRR10998566_fastqc.zip
+FastQC	all_sections	SRR10998560	/home/ibg-4/assignment/assignment_dataQC/SRR10998560_fastqc.zip
+FastQC	all_sections	SRR10998564	/home/ibg-4/assignment/assignment_dataQC/SRR10998564_fastqc.zip
+FastQC	all_sections	SRR10998562	/home/ibg-4/assignment/assignment_dataQC/SRR10998562_fastqc.zip
+FastQC	all_sections	SRR10998569	/home/ibg-4/assignment/assignment_dataQC/SRR10998569_fastqc.zip
+FastQC	all_sections	SRR10998567	/home/ibg-4/assignment/assignment_dataQC/SRR10998567_fastqc.zip
+FastQC	all_sections	SRR10998568	/home/ibg-4/assignment/assignment_dataQC/SRR10998568_fastqc.zip
