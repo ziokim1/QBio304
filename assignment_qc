@@ -1,0 +1,3 @@
+#!bin/bash
+
+fastqc -o ~/assignment/assignment_dataQC/ -t 3 ~/assignment/assignment_data/*.fastq.gz
