@@ -1,5 +1,5 @@
 # make assignment directory with the necessary subdirectories
-mkdir -p ~/assignment/{fastq, fasta, qc/{raw, trimmed}, read_map/{log}}
+mkdir -p ~/assignment/{fastq,fasta,qc/{raw,trimmed},read_map/log}
 
 # download fastq files
 wget -nc -P ~/assignment/fastq ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR109/063/SRR10998563/SRR10998563.fastq.gz
@@ -17,3 +17,6 @@ wget -nc -P ~/assignment/fastq ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR109/070/SRR
 
 # download reference cDNA for Solanum lycopersicum
 wget -nc -P ~/assignment/fasta ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-57/fasta/solanum_lycopersicum/cdna/Solanum_lycopersicum.SL3.0.cdna.all.fa.gz
+
+# download study design
+wget -nc -P ~/assignment/read_map raw.githubusercontent.com/ziokim1/QBio304/main/studydesign_assignment.txt
