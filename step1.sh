@@ -1,3 +1,4 @@
+#!/bin/bash
 # Change permissions on your computer so that you can run a shell script by typing: 'chmod 777 step1.sh' (without the quotes) at the terminal prompt 
 # Then type './step1.sh' (without the quotes) at the prompt.  
 
