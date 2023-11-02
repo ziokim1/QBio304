@@ -1,3 +1,4 @@
+#!/bin/bash
 # build an index from Solanum lycopersicum reference fasta file 
 kallisto index -i ~/assignment/read_map/Solanum_lycopersicum.SL3.0.cdna.all.index ~/assignment/fasta/Solanum_lycopersicum.SL3.0.cdna.all.fa.gz
 
@@ -19,6 +20,6 @@ kallisto quant -i ~/assignment/read_map/Solanum_lycopersicum.SL3.0.cdna.all.inde
 kallisto quant -i ~/assignment/read_map/Solanum_lycopersicum.SL3.0.cdna.all.index -o ~/assignment/read_map/HT11 -t 8 --single -l 250 -s 30 ~/assignment/fastq/trimmed/SRR10998567_trimmed.fastq.gz &> ~/assignment/read_map/log/HT11.log
 kallisto quant -i ~/assignment/read_map/Solanum_lycopersicum.SL3.0.cdna.all.index -o ~/assignment/read_map/HT12 -t 8 --single -l 250 -s 30 ~/assignment/fastq/trimmed/SRR10998568_trimmed.fastq.gz &> ~/assignment/read_map/log/HT12.log
 
-echo "Finished"
+echo "Finished Step 3"
 
 # proceed to R scripts
