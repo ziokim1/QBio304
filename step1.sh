@@ -1,3 +1,6 @@
+# Change permissions on your computer so that you can run a shell script by typing: 'chmod 777 step1.sh' (without the quotes) at the terminal prompt 
+# Then type './step1.sh' (without the quotes) at the prompt.  
+
 # make assignment directory with the necessary subdirectories
 mkdir -p ~/assignment/{fastq,fasta,qc/{raw,trimmed},read_map/log}
 
@@ -20,3 +23,7 @@ wget -nc -P ~/assignment/fasta ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-5
 
 # download study design
 wget -nc -P ~/assignment/read_map raw.githubusercontent.com/ziokim1/QBio304/main/studydesign_assignment.txt
+
+# run fastqc on fastq files
+fastqc ~/assignment/fastq/*.gz -t 8 -o ~/assignment/qc/raw
+multiqc -d ~/assignment/qc/raw -o ~/assignment/qc/raw
