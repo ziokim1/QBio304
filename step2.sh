@@ -16,4 +16,6 @@ done
 fastqc ~/assignment/fastq/trimmed/*.gz -t 8 -o ~/assignment/qc/trimmed
 multiqc -d ~/assignment/qc/trimmed -o ~/assignment/qc/trimmed
 
+echo "Finished Step 2"
+
 # if the trimmed reads seem to pass the quality check, proceed to read mapping.
