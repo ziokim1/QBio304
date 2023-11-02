@@ -24,7 +24,7 @@ wget -nc -P ~/assignment/fasta ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-5
 
 # download Trimmomatic
 wget -nc -P ~/assignment http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
-unzip ~/assignment/Trimmomatic-0.39.zip
+unzip ~/assignment/Trimmomatic-0.39.zip -d ~/assignment
 
 # download study design
 wget -nc -P ~/assignment/read_map raw.githubusercontent.com/ziokim1/QBio304/main/studydesign_assignment.txt
