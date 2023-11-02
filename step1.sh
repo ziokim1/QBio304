@@ -3,7 +3,7 @@
 # Then type './step1.sh' (without the quotes) at the prompt.  
 
 # make assignment directory with the necessary subdirectories
-mkdir -p ~/assignment/{fastq,fasta,qc/{raw,trimmed},read_map/log}
+mkdir -p ~/assignment/{fastq/{raw,trimmed},fasta,qc/{raw,trimmed},read_map/log}
 
 # download fastq files
 wget -nc -P ~/assignment/fastq ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR109/063/SRR10998563/SRR10998563.fastq.gz
