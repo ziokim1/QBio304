@@ -33,4 +33,6 @@ wget -nc -P ~/assignment/read_map raw.githubusercontent.com/ziokim1/QBio304/main
 fastqc ~/assignment/fastq/raw/*.gz -t 8 -o ~/assignment/qc/raw
 multiqc -d ~/assignment/qc/raw -o ~/assignment/qc/raw
 
+echo "Finished Step 1"
+
 # looking at the multiqc file and individual fastqc files, make the judgment whether to trim reads or not.
