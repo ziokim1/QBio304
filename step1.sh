@@ -19,6 +19,10 @@ wget -nc -P ~/assignment/fastq/raw ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR109/060
 wget -nc -P ~/assignment/fastq/raw ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR109/066/SRR10998566/SRR10998566.fastq.gz
 wget -nc -P ~/assignment/fastq/raw ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR109/070/SRR10998570/SRR10998570.fastq.gz
 
+# md5sum check
+wget -nc -P ~/assignment raw.githubusercontent.com/ziokim1/QBio304/main/md5sums.txt
+md5sum -c ~/assignment/md5sums.txt
+
 # download reference cDNA for Solanum lycopersicum
 wget -nc -P ~/assignment/fasta ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-57/fasta/solanum_lycopersicum/cdna/Solanum_lycopersicum.SL3.0.cdna.all.fa.gz
 
