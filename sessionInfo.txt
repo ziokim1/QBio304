@@ -1,0 +1,39 @@
+R version 4.3.1 (2023-06-16)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.3 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.10.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.10.0
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=de_DE.UTF-8        LC_COLLATE=en_US.UTF-8     LC_MONETARY=de_DE.UTF-8   
+ [6] LC_MESSAGES=en_US.UTF-8    LC_PAPER=de_DE.UTF-8       LC_NAME=C                  LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=de_DE.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Europe/Berlin
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] gprofiler2_0.2.2  plotly_4.10.3     cowplot_1.1.1     matrixStats_1.0.0 edgeR_4.0.1       limma_3.58.1      biomaRt_2.58.0    tximport_1.30.0  
+ [9] lubridate_1.9.3   forcats_1.0.0     stringr_1.5.0     dplyr_1.1.3       purrr_1.0.2       readr_2.1.4       tidyr_1.3.0       tibble_3.2.1     
+[17] ggplot2_3.4.4     tidyverse_2.0.0  
+
+loaded via a namespace (and not attached):
+ [1] tidyselect_1.2.0        viridisLite_0.4.2       farver_2.1.1            blob_1.2.4              filelock_1.0.2          Biostrings_2.70.1      
+ [7] bitops_1.0-7            lazyeval_0.2.2          fastmap_1.1.1           RCurl_1.98-1.13         BiocFileCache_2.10.1    XML_3.99-0.15          
+[13] digest_0.6.33           timechange_0.2.0        lifecycle_1.0.3         ellipsis_0.3.2          processx_3.8.2          statmod_1.5.0          
+[19] KEGGREST_1.42.0         RSQLite_2.3.2           magrittr_2.0.3          compiler_4.3.1          rlang_1.1.1             progress_1.2.2         
+[25] tools_4.3.1             yaml_2.3.7              utf8_1.2.4              data.table_1.14.8       htmlwidgets_1.6.2       prettyunits_1.2.0      
+[31] labeling_0.4.3          bit_4.0.5               curl_5.1.0              xml2_1.3.5              withr_2.5.2             BiocGenerics_0.48.1    
+[37] grid_4.3.1              stats4_4.3.1            fansi_1.0.5             colorspace_2.1-0        scales_1.2.1            cli_3.6.1              
+[43] crayon_1.5.2            generics_0.1.3          rstudioapi_0.15.0       httr_1.4.7              tzdb_0.4.0              DBI_1.1.3              
+[49] cachem_1.0.8            zlibbioc_1.48.0         parallel_4.3.1          AnnotationDbi_1.64.0    BiocManager_1.30.22     XVector_0.42.0         
+[55] vctrs_0.6.4             jsonlite_1.8.7          IRanges_2.36.0          hms_1.1.3               S4Vectors_0.40.1        bit64_4.0.5            
+[61] crosstalk_1.2.0         locfit_1.5-9.8          glue_1.6.2              ps_1.7.5                stringi_1.7.12          gtable_0.3.4           
+[67] GenomeInfoDb_1.38.0     munsell_0.5.0           pillar_1.9.0            htmltools_0.5.6.1       rappdirs_0.3.3          GenomeInfoDbData_1.2.11
+[73] R6_2.5.1                dbplyr_2.4.0            vroom_1.6.4             Biobase_2.62.0          lattice_0.22-5          png_0.1-8              
+[79] memoise_2.0.1           Rcpp_1.0.11             gridExtra_2.3           pkgconfig_2.0.3        
