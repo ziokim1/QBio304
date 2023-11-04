@@ -1,0 +1,13 @@
+Sample	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-total_sequences
+home | zio | assignment | qc | trimmed | SRR10998559	61.75400064174339	42.0	65.0	10.0	30832344.0
+home | zio | assignment | qc | trimmed | SRR10998560	65.78248744572369	42.0	65.0	10.0	31030890.0
+home | zio | assignment | qc | trimmed | SRR10998561	67.83389069225944	42.0	65.0	10.0	32372278.0
+home | zio | assignment | qc | trimmed | SRR10998562	64.47453293628261	42.0	65.0	10.0	31254306.0
+home | zio | assignment | qc | trimmed | SRR10998563	52.11333767477564	42.0	65.0	10.0	24170155.0
+home | zio | assignment | qc | trimmed | SRR10998564	60.197237189034325	42.0	65.0	10.0	29929875.0
+home | zio | assignment | qc | trimmed | SRR10998565	61.037398500829205	42.0	65.0	10.0	32029618.0
+home | zio | assignment | qc | trimmed | SRR10998566	65.21041658127535	42.0	65.0	10.0	30846857.0
+home | zio | assignment | qc | trimmed | SRR10998567	65.38061584579944	42.0	65.0	10.0	39988012.0
+home | zio | assignment | qc | trimmed | SRR10998568	66.413621537961	42.0	65.0	10.0	34202865.0
+home | zio | assignment | qc | trimmed | SRR10998569	67.01608477235155	42.0	65.0	10.0	27461840.0
+home | zio | assignment | qc | trimmed | SRR10998570	64.60963104553187	42.0	65.0	10.0	31872201.0

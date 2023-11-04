@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998566	/home/zio/assignment/qc/trimmed/SRR10998566_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998570	/home/zio/assignment/qc/trimmed/SRR10998570_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998564	/home/zio/assignment/qc/trimmed/SRR10998564_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998561	/home/zio/assignment/qc/trimmed/SRR10998561_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998565	/home/zio/assignment/qc/trimmed/SRR10998565_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998562	/home/zio/assignment/qc/trimmed/SRR10998562_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998568	/home/zio/assignment/qc/trimmed/SRR10998568_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998563	/home/zio/assignment/qc/trimmed/SRR10998563_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998567	/home/zio/assignment/qc/trimmed/SRR10998567_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998559	/home/zio/assignment/qc/trimmed/SRR10998559_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998560	/home/zio/assignment/qc/trimmed/SRR10998560_trimmed_fastqc.zip
+FastQC	all_sections	home | zio | assignment | qc | trimmed | SRR10998569	/home/zio/assignment/qc/trimmed/SRR10998569_trimmed_fastqc.zip
