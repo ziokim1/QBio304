@@ -46,7 +46,7 @@ p1 <- ggplot(log2.cpm.df.pivot) +
   stat_summary(fun = "median", 
                geom = "point", 
                shape = 95, 
-               size = 10, 
+               size = 12, 
                color = "black", 
                show.legend = FALSE) +
   labs(y="log2 expression", x = "sample",
@@ -73,7 +73,7 @@ p2 <- ggplot(log2.cpm.filtered.df.pivot) +
   stat_summary(fun = "median", 
                geom = "point", 
                shape = 95, 
-               size = 10, 
+               size = 12, 
                color = "black", 
                show.legend = FALSE) +
   labs(y="log2 expression", x = "sample",
@@ -97,7 +97,7 @@ p3 <- ggplot(log2.cpm.filtered.norm.df.pivot) +
   stat_summary(fun = "median", 
                geom = "point", 
                shape = 95, 
-               size = 10, 
+               size = 12, 
                color = "black", 
                show.legend = FALSE) +
   labs(y="log2 expression", x = "sample",
@@ -106,7 +106,7 @@ p3 <- ggplot(log2.cpm.filtered.norm.df.pivot) +
        caption=paste0("produced on ", Sys.time())) +
   theme_bw()
 
-plot_grid(p1, p2, p3, labels = c('A', 'B', 'C'), label_size = 12, nrow = 3)
+plot_grid(p1, p2, p3, labels = c('A', 'B', 'C'), label_size = 18, nrow = 3)
 
 # multivariate ----
 library(plotly) # visualize pca plot
@@ -238,7 +238,7 @@ vplot.B3 <- ggplot(myTopHits.B3.df) + # plotting the volcano plot
        caption=paste0("produced on ", Sys.time())) +
   theme_bw()
 
-plot_grid(vplot, vplot.BS, vplot.B3, label_size = 12, nrow = 1)
+plot_grid(vplot, vplot.BS, vplot.B3, label_size = 18, nrow = 1)
 
 # decideTests to pull out the DEGs and make Venn Diagram
 
@@ -250,10 +250,10 @@ summary(results) # 235 down-regulated and 291 up-regulated genes for BS+B3
 summary(results.BS) # 629 down-regulated and 551 up-regulated genes for BS
 summary(results.B3) # 180 down-regulated and 254 up-regulated genes for B3
 
-par(mfrow=c(1,3), mai=c(10,10,2,10),
-    vennDiagram(results, names="DEGs below threshold", include="both", cex = 1), title("BS+B3"), # total of 526 genes are regulated
-    vennDiagram(results.BS, names="DEGs below threshold", include="both", cex = 1), title("BS"), # total of 1180 genes are regulated
-    vennDiagram(results.B3, names="DEGs below threshold", include="both", cex = 1), title("B3")) # total of 434 genes are regulated
+par(mfrow=c(1,3), mai=c(10,10,2,10), cra = 20,
+    vennDiagram(results, names="below threshold", include="both", cex = 2), title("BS+B3"), # total of 526 genes are regulated
+    vennDiagram(results.BS, names="below threshold", include="both", cex = 2), title("BS"), # total of 1180 genes are regulated
+    vennDiagram(results.B3, names="below threshold", include="both", cex = 2), title("B3")) # total of 434 genes are regulated
 
 
 # create table for candidate genes that are differentially expressed
@@ -264,7 +264,7 @@ diffGenes <- v.DEGList.filtered.norm$E[results[,1] !=0,]
 diffGenes.df <- as_tibble(diffGenes, rownames = "geneID")
 datatable(diffGenes.df,
           extensions = c('KeyTable', "FixedHeader"),
-          caption = 'Table 3: DEGs in Solanum lycopersicum',
+          caption = 'DEGs in Solanum lycopersicum',
           options = list(keys = TRUE, searchHighlight = TRUE, pageLength = 10, lengthMenu = c("10", "25", "50", "100"))) %>%
   formatRound(columns=c(2:13), digits=2)
 
@@ -277,7 +277,7 @@ myTopHits <- topTable(ebFit, adjust ="BH", coef=1, number=526, p.value=0.05, fc=
 myTopHits.BS <- topTable(ebFit.BS, adjust ="BH", coef=1, number=1180, p.value=0.05, fc=3, sort.by="logFC")
 myTopHits.B3 <- topTable(ebFit.B3, adjust ="BH", coef=1, number=434, p.value=0.05, fc=3, sort.by="logFC")
 
-# use the 'gost' function from the gprofiler2 package to run GO enrichment analysis, the list of available species for the "organism" parameters is here: https://biit.cs.ut.ee/gprofiler/page/organism-list 
+# use the 'gost' function from the gprofiler2 package to run GO enrichment analysis
 gost.res <- gost(rownames(myTopHits), organism = "slycopersicum", correction_method = "fdr")
 gost.res.BS <- gost(rownames(myTopHits.BS), organism = "slycopersicum", correction_method = "fdr")
 gost.res.B3 <- gost(rownames(myTopHits.B3), organism = "slycopersicum", correction_method = "fdr")
@@ -287,7 +287,7 @@ mygostplot <- gostplot(gost.res, interactive = F, capped = F) #set interactive=F
 mygostplot.BS <- gostplot(gost.res.BS, interactive = F, capped = F) #set interactive=FALSE to get plot for publications
 mygostplot.B3 <- gostplot(gost.res.B3, interactive = F, capped = F)
 
-plot_grid(mygostplot, mygostplot.BS, mygostplot.B3, labels = c('BS+B3', 'BS', 'B3'), label_size = 12, ncol = 1)
+plot_grid(mygostplot, mygostplot.BS, mygostplot.B3, labels = c('Manhattan plot (BS+B3)', 'Manhattan plot (BS)', 'Manhattan plot (B3)'), label_size = 20, ncol = 1)
 
 # produce a publication quality static manhattan plot with specific GO terms highlighted
 # rerun the above gostplot function with 'interactive=F' and save to an object 'mygostplot'
@@ -305,6 +305,6 @@ g2 <- publish_gostplot(
   width = NA,
   height = NA)
 
-plot_grid(g1, g2, labels = c('sort by p value (BS)', 'sort by term size (BS)'), label_size = 12, ncol = 1)
+plot_grid(g1, g2, labels = c('sort by p value (BS)', 'sort by term size (BS)'), label_size = 18, ncol = 1)
 
 # writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
