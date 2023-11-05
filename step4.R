@@ -135,6 +135,7 @@ ggplotly(pca.plot)
 
 # differential genes ----
 library(limma) # create linear models and decide tests
+library(DT) # format tables
 
 # volcano plot for BS+B3
 group <- factor(targets$group) # creating a design matrix with independent variables selected for the experiment.
@@ -254,6 +255,21 @@ par(mfrow=c(1,3), mai=c(10,10,2,10),
     vennDiagram(results.BS, names="DEGs below threshold", include="both", cex = 1), title("BS"), # total of 1180 genes are regulated
     vennDiagram(results.B3, names="DEGs below threshold", include="both", cex = 1), title("B3")) # total of 434 genes are regulated
 
+
+# create table for candidate genes that are differentially expressed
+
+results <- decideTests(ebFit, method="global", adjust.method="BH", p.value=0.05, lfc=3)
+colnames(v.DEGList.filtered.norm$E) <- sampleLabels
+diffGenes <- v.DEGList.filtered.norm$E[results[,1] !=0,]
+diffGenes.df <- as_tibble(diffGenes, rownames = "geneID")
+datatable(diffGenes.df,
+          extensions = c('KeyTable', "FixedHeader"),
+          caption = 'Table 3: DEGs in Solanum lycopersicum',
+          options = list(keys = TRUE, searchHighlight = TRUE, pageLength = 10, lengthMenu = c("10", "25", "50", "100"))) %>%
+  formatRound(columns=c(2:13), digits=2)
+
+write_tsv(diffGenes.df,"DiffGenes.txt")
+
 # functional enrichment ----
 library(gprofiler2) #tools for accessing the GO enrichment results using g:Profiler web resources
 
@@ -289,4 +305,6 @@ g2 <- publish_gostplot(
   width = NA,
   height = NA)
 
-plot_grid(g1, g2, labels = c('sort by p value (BS)', 'sort by term size (BS)'), label_size = 12, nrow = 1)
+plot_grid(g1, g2, labels = c('sort by p value (BS)', 'sort by term size (BS)'), label_size = 12, ncol = 1)
+
+# writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
