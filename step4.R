@@ -292,19 +292,19 @@ plot_grid(mygostplot, mygostplot.BS, mygostplot.B3, labels = c('Manhattan plot (
 # produce a publication quality static manhattan plot with specific GO terms highlighted
 # rerun the above gostplot function with 'interactive=F' and save to an object 'mygostplot'
 g1 <- publish_gostplot(
-  mygostplot.BS, #your static gostplot from above
-  highlight_terms = gost.res.BS[[1]][["term_id"]][order(gost.res.BS[[1]][["p_value"]])][1:10], # 10 ontologies with the lowest p-value
+  mygostplot, #your static gostplot from above
+  highlight_terms = gost.res[[1]][["term_id"]][order(gost.res[[1]][["p_value"]])][1:10], # 10 ontologies with the lowest p-value
   filename = NULL,
   width = NA,
   height = NA)
 
 g2 <- publish_gostplot(
-  mygostplot.BS, #your static gostplot from above
-  highlight_terms = gost.res.BS[[1]][["term_id"]][order(gost.res.BS[[1]][["term_size"]], decreasing = T)][1:10], # 10 ontologies with the highest term size
+  mygostplot, #your static gostplot from above
+  highlight_terms = gost.res[[1]][["term_id"]][order(gost.res[[1]][["term_size"]], decreasing = T)][1:10], # 10 ontologies with the highest term size
   filename = NULL,
   width = NA,
   height = NA)
 
-plot_grid(g1, g2, labels = c('sort by p value (BS)', 'sort by term size (BS)'), label_size = 18, ncol = 1)
+plot_grid(g1, g2, labels = c('sort by p value (BS+B3)', 'sort by term size (BS+B3)'), label_size = 18, ncol = 1)
 
 # writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
