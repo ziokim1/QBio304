@@ -273,9 +273,9 @@ write_tsv(diffGenes.df,"DiffGenes.txt")
 # functional enrichment ----
 library(gprofiler2) #tools for accessing the GO enrichment results using g:Profiler web resources
 
-myTopHits <- topTable(ebFit, adjust ="BH", coef=1, number=526, p.value=0.05, fc=3, sort.by="logFC")
-myTopHits.BS <- topTable(ebFit.BS, adjust ="BH", coef=1, number=1180, p.value=0.05, fc=3, sort.by="logFC")
-myTopHits.B3 <- topTable(ebFit.B3, adjust ="BH", coef=1, number=434, p.value=0.05, fc=3, sort.by="logFC")
+myTopHits <- topTable(ebFit, adjust ="BH", coef=1, number=526, p.value=0.05, lfc=3, sort.by="logFC")
+myTopHits.BS <- topTable(ebFit.BS, adjust ="BH", coef=1, number=1180, p.value=0.05, lfc=3, sort.by="logFC")
+myTopHits.B3 <- topTable(ebFit.B3, adjust ="BH", coef=1, number=434, p.value=0.05, lfc=3, sort.by="logFC")
 
 # use the 'gost' function from the gprofiler2 package to run GO enrichment analysis
 gost.res <- gost(rownames(myTopHits), organism = "slycopersicum", correction_method = "fdr")
